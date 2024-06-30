@@ -17,8 +17,8 @@ A.Cara set up pertama kali website SEA Salon melalui VSCode:
 1. Buka program VSCode, tekan CTRL + K + O lalu pilih folder SEA-Salon_Ariel-Muljadi_Universitas-Indonesia-main
 2. Buka new terminal, ketik npm install dan ketik npm run build 
 3. Buka file .env. Lalu diubah DB_HOST, DB_USER, dan DB_PASSWORD dengan pengaturan konfigurasi akun mysql anda
-4. Buka file script reservation.sql di program mysql, diubah ALTER USER'nama_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password_user'; dengan user dan pass akun mysql anda 
-5. Execute script reservation.sql
+4. Buka file script reservations.sql di program mysql, diubah ALTER USER'nama_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password_user'; dengan user dan pass akun mysql anda 
+5. Execute script reservations.sql
 6. Folder build sudah terbuat, lalu ketik node server.js (backend)
 7. Buka new terminal lagi, kemudian ketik cd src dan ketik npm start (frontend)
 8. Klik link local host yang tersedia di terminal node atau terminal yang menjalankan node server.js tadi.
@@ -54,8 +54,8 @@ A.How to set up the SEA Salon website for the first time through VSCode:
 1. Open the VSCode program, press CTRL + K + O then select the SEA-Salon_Ariel-Muljadi_Universitas-Indonesia-main folder.
 2. Open new terminal, type npm install and type npm run build 
 3. Open the .env file. Then change DB_HOST, DB_USER, and DB_PASSWORD with your mysql account configuration settings
-4. Open the reservation.sql script file in the mysql program, change ALTER USER'nama_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password_user'; with the user and pass of your mysql account 
-5. Execute the reservation.sql script
+4. Open the reservations.sql script file in the mysql program, change ALTER USER'nama_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password_user'; with the user and pass of your mysql account 
+5. Execute the reservations.sql script
 6. The build folder has been created, then type node server.js (backend)
 7. Open the new terminal again, then type cd src and type npm start (frontend)
 8. Click the local host link available in the terminal node or the terminal that runs the server.js node earlier.
