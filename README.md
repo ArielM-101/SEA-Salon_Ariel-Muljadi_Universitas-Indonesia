@@ -8,7 +8,8 @@
    
 2. Branch salon tidak bisa dihapus sebelum service salon yang tersedia pada branch salon itu dihapus. Selain itu, data seperti reviews dan reservations dapat dihapus tanpa syarat apapun oleh admin
    
-3. Lakukan tiga langkah A, B, dan C secara berurutan yang ada di bawah ini. 
+3. Lakukan tiga langkah A, B, dan C secara berurutan yang ada di bawah ini.
+   
  
 A.Cara set up pertama kali website SEA Salon melalui VSCode:
 1. Buka new terminal, ketik npm run build
