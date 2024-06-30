@@ -11,9 +11,10 @@ Bahasa Indonesia:
 2. Branch salon tidak bisa dihapus sebelum service salon yang tersedia pada branch salon itu dihapus. Selain itu, data seperti reviews dan reservations dapat dihapus tanpa syarat apapun oleh admin
    
 3. Lakukan tiga langkah A, B, dan C secara berurutan yang ada di bawah ini.
-   
- 
+
+  
 A.Cara set up pertama kali website SEA Salon melalui VSCode:
+1. Buka program VSCode, tekan CTRL + K + O lalu pilih folder SEA-Salon_Ariel-Muljadi_Universitas-Indonesia-main 
 1. Buka new terminal, ketik npm run build
 2. Buka file .env. Lalu diubah DB_HOST, DB_USER, dan DB_PASSWORD dengan pengaturan konfigurasi akun mysql anda
 3. Folder build sudah terbuat, lalu ketik node server.js (backend)
