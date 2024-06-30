@@ -1,0 +1,170 @@
+/* Warna dan Tema Konsisten */
+:root {
+    --primary-color: #8B4513; /* Saddle Brown */
+    --secondary-color: #CD853F; /* Peru */
+    --background-color: #F5DEB3; /* Wheat */
+    --text-color: #5C4033; /* Dark Brown */
+    --white-color: #FFFFFF; /* White */
+    --grey-color: #D2B48C; /* Tan */
+}
+
+/* Gaya dasar untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Gaya untuk root div */
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Contoh gaya untuk header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px;
+    text-align: center;
+    width: 120%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Gaya untuk kontainer utama */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk kolom kiri */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Gaya untuk kolom kanan */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
+/* Gaya untuk konten utama */
+main {
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk tombol */
+button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Gaya untuk footer */
+footer {
+    margin-top: auto; /* Pastikan footer menempel ke bawah */
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    background-color: var(--grey-color);
+    border-top: 1px solid #e1e1e1;
+    position: fixed; /* Tetapkan posisi footer */
+    bottom: 0; /* Letakkan di bagian bawah */
+    left: 0; /* Posisi mulai dari kiri */
+    z-index: 100; /* Pastikan footer muncul di atas konten lain jika ada */
+}
+
+/* Gaya untuk paragraf dalam footer */
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    width: 100%;
+    max-width: 1200px; /* Maksimum lebar footer */
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Pusatkan jika ingin */
+}
+
+/* Gaya untuk gambar dan ikon */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--primary-color);
+}
+
+/* Animasi dan Transisi */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsif Desain */
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+    .right-column {
+        align-items: center;
+        padding-right: 0;
+    }
+}
+
+/* Gaya untuk section-box */
+.section-box {
+    background: rgba(255, 255, 255, 0.8); /* Transparan putih */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Lebar penuh sesuai dengan parent (left-column) */
+    max-width: 600px; /* Atur maksimum lebar jika perlu */
+    margin: 0; /* Nolkan margin untuk menghindari ruang tambahan */
+}
