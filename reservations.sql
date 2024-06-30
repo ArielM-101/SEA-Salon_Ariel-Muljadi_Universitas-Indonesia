@@ -1,4 +1,4 @@
-ALTER USER'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Petama3177';
+ALTER USER'nama_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password_user';
 CREATE DATABASE IF NOT EXISTS salon_database;
 USE salon_database;
 
